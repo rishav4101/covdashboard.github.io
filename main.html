@@ -26,17 +26,17 @@
               </div>
               <div class="card card-grey">
                 <div class="color-mark-grey"></div>
-                <h1>12345678</h1>
+                <h1 id="confirmed-api"></h1>
                 <h2>Confirmed</h2>
               </div>
               <div class="card card-green">
                 <div class="color-mark-green"></div>
-                <h1>12345678</h1>
+                <h1 id="recovered-api"></h1>
                 <h2>Recovered</h2>
               </div>
               <div class="card card-red">
                 <div class="color-mark-red"></div>
-                <h1>12345678</h1>
+                <h1 id="deaths-api"></h1>
                 <h2>Deaths</h2>
               </div>
           </div>
@@ -56,15 +56,21 @@
       </div>
       <div class="col2">
         <div class="col2-wrap">
+            <div class="country-head">
+                Select a country
+            </div>
+            <div class="country-selected" id="country-selected">
+
+            </div>
             <div class="country-list">
-                <ul id="country-list"></ul>
+                <div id="country-list"></div>
             </div>
         </div>
       </div>
     </div>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script>
+    <!-- <script>
         var data = generateDayWiseTimeSeries(new Date("22 Apr 2017").getTime(), 115, {
   min: 30,
   max: 90
@@ -197,7 +203,7 @@ function generateDayWiseTimeSeries(baseval, count, yrange) {
   return series;
 }
 
-    </script>
+    </script> -->
     
   </body>
 </html>
