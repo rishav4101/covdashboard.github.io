@@ -11,9 +11,9 @@
   <body>
     <div class="screen-wrapper">
         <div class="nav-lappy">
-           <a class="menu" href="index.html">HOME</a>
-           <a class="menu" href="about.html">ABOUT</a>
-           <button class="menu-link">GITHUB</button>
+            <button class="menu-link">HOME</button>
+            <a href="about.html"><button class="menu-link">ABOUT</button></a>
+            <button class="menu-link">GITHUB</button>
         </div>
       <div class="col1">
         <div class="col1-inner">
@@ -21,33 +21,41 @@
           <div class="overview">
               <div class="card card-orange">
                   <div class="color-mark-orange"></div>
+                  <div class="card-text">
                   <h1 id="active-api"></h1>
-                  <h2>Active</h2>
+                  <h2>&nbsp;&nbsp;Active</h2>
+                  </div>
               </div>
               <div class="card card-grey">
                 <div class="color-mark-grey"></div>
+                <div class="card-text">
                 <h1 id="confirmed-api"></h1>
-                <h2>Confirmed</h2>
+                <h2>&nbsp;&nbsp;Confirmed</h2>
+              </div>
               </div>
               <div class="card card-green">
                 <div class="color-mark-green"></div>
+                <div class="card-text">
                 <h1 id="recovered-api"></h1>
-                <h2>Recovered</h2>
+                <h2>&nbsp;&nbsp;Recovered</h2>
+              </div>
               </div>
               <div class="card card-red">
                 <div class="color-mark-red"></div>
+                <div class="card-text">
                 <h1 id="deaths-api"></h1>
-                <h2>Deaths</h2>
+                <h2>&nbsp;&nbsp;Deaths</h2>
+              </div>
               </div>
           </div>
           <div class="chart-div">
-        <div class="chart-wrapper">
+            <div class="chart-wrapper">
             <div id="chart-area">
             </div>
             <div id="chart-bar">
             </div>
-        </div>
-    </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col2">
@@ -62,7 +70,7 @@
                 <div id="country-list"></div>
             </div>
             <div class="socialdistance">
-                <img src="socialdistance.svg" style="height: 250px; width: 100%; margin: 0 auto;" />
+                <img src="socialdistance.svg" style="width: 35%; margin: 0px auto;" />
                 <h3>Maintain Social Distancing</h3>
                 <h4>Made with love&#128157 by GNU/Linux Users' Group</h4>
             </div>

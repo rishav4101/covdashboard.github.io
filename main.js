@@ -3,6 +3,18 @@ const ul = document.getElementById("country-list");
 fetch("https://corona-api.com/countries")
   .then((response) => response.json())
   .then((res) => {
+    res.data.sort((a, b) => {
+        let fa = a.name.toLowerCase(),
+            fb = b.name.toLowerCase();
+    
+        if (fa < fb) {
+            return -1;
+        }
+        if (fa > fb) {
+            return 1;
+        }
+        return 0;
+    });
     res.data.map((cnt) => {
       const li = document.createElement("button");
       li.id = cnt.code;
