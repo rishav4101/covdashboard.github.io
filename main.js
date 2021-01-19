@@ -22,13 +22,16 @@ fetch("https://corona-api.com/countries")
     })
     
         getData("IN").then((resp) => {
+            document.getElementById(
+                "country-selected"
+              ).innerHTML = `<div>India</div>`;
             displayData(resp);
         });
 
   });
 
 const getData = async (countryCode) => {
-  const resp = await fetch(`http://corona-api.com/countries/${countryCode}`);
+  const resp = await fetch(`https://corona-api.com/countries/${countryCode}`);
   const data = await resp.json();
   return data;
 };
