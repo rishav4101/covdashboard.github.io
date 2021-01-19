@@ -31,7 +31,7 @@ fetch("https://corona-api.com/countries")
   });
 
 const getData = async (countryCode) => {
-  const resp = await fetch(`http://corona-api.com/countries/${countryCode}`);
+  const resp = await fetch(`https://corona-api.com/countries/${countryCode}`);
   const data = await resp.json();
   return data;
 };
