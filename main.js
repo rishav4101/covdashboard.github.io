@@ -22,6 +22,9 @@ fetch("https://corona-api.com/countries")
     })
     
         getData("IN").then((resp) => {
+            document.getElementById(
+                "country-selected"
+              ).innerHTML = `<div>India</div>`;
             displayData(resp);
         });
 
