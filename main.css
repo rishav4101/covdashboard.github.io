@@ -85,8 +85,9 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1px;
-    max-width: 900px;
+    padding: 10px;
+    width: 80%;
+    max-width: 750px;
 }
 .overview .card{
     display: flex;
@@ -187,7 +188,7 @@ body{
     padding: 20px;
 }
 .chart-wrapper{
-    width: 96%;
+    width: 94%;
     position: relative;
     background: rgb(0, 1, 26);
     padding: 1px;
@@ -286,9 +287,11 @@ body{
     padding: 0;
 }
 .socialdistance {
+    position: relative;
     text-align: center;
 }
 .socialdistance h3{
+    position: relative;
     color: #fff;
     font-size: 18px;
     font-weight: 700;
@@ -299,6 +302,7 @@ body{
     text-align: center;
 }
 .socialdistance h4{
+    position: relative;
     color: #ddd;
     font-size: 12px;
     font-weight: 700;
