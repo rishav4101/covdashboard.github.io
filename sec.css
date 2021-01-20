@@ -1,20 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap');
 @import "main.css";
 p{
-    color: #54ffc8;
-         margin-top: 120px;
-         margin-left: 50px;
-         font-size: 1.3rem;
+    color: #fff;
+    font-size: 17px;
 }
 a.link{ 
-    color:blue;
+    color: #54ffc8;
+    text-decoration: none;
 }
-a.photo{
-     color: white;
-     margin-top: 185px;
-     position: absolute;
-     font-size: 2rem;
+.about-text{
+    max-width: 750px;
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 25px;
 }
-img{
-    margin-top: 150px;
+.about-text h5{
+    color: #fff;
+    font-size: 25px;
+}
+.foot{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
 }
